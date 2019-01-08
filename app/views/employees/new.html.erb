@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<div class="container">
+<h1 class="title">New Employee</h1>
+
+<div class="section">
+	<%= simple_form_for @employee do |f| %>
+	<div class="field">
+    <%= f.input :first_name %>
+    <%= f.input :last_name, class: "control" %>
+    <%= f.input :date_of_birth, class: "control" %>
+    <%= f.input :gender, class: "control" %>
+    <%= f.input :personal_email, class: "control" %>
+    <%= f.input :work_email, class: "control" %>
+    <%= f.input :mobile, class: "control" %>
+    <%= f.input :address1, class: "control" %>
+    <%= f.input :address2, class: "control" %>     
+    <%= f.input :city, class: "control" %>
+    <%= f.input :postcode, class: "control" %> 
+    <%= f.input :state, class: "control" %>
+    
+    <%= f.input :start_date, class: "control" %> 
+  </div>
+	</div>
+<%= f.button :submit, 'Create New Employee', class: "btn btn-primary" %> 
+
+<% end %>

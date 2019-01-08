@@ -1,1 +1,54 @@
-test
+<div class="container">
+
+<h1>list view</h1>
+
+
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          
+           <tr>      
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Date of Birth</th>
+      <th>Gender</th>
+      <th>Mobile</th>
+      <th>Country</th>
+      <th>Deparment</th>
+      <th>Office</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= link_to employee.id, employee  %></td>
+        <td><%= employee.first_name %></td>
+        <td><%= employee.last_name %></td>
+        <td><%= employee.date_of_birth %></td>
+         <td><%= employee.gender %></td>
+           <td><%= employee.mobile %></td>
+            <td><%= employee.country %></td>
+             <td><%= employee.department %></td>
+              <td><%= employee.office %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</tr>
+</thead>
+</table>
+
+<br>
+
+
+
+
+
+
+    
+
+     
+    
