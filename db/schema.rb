@@ -10,11 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_08_020718) do
+ActiveRecord::Schema.define(version: 2019_01_10_044817) do
 
   create_table "assets", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "asset_tag"
+    t.string "asset_type"
+    t.string "model_brand"
+    t.string "serial_no"
+    t.date "manafacture_date"
+    t.string "host_name"
+    t.string "mac_address_ethernet"
+    t.string "mac_address_wifi"
+    t.string "operating_system"
+    t.string "business_unit"
+    t.string "location"
+    t.date "sophos_installed_date"
+    t.string "admin_password"
+    t.string "user_password"
+    t.string "setup_by"
   end
 
   create_table "employees", force: :cascade do |t|

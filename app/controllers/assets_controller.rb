@@ -28,10 +28,10 @@ class AssetsController < ApplicationController
 
     respond_to do |format|
       if @asset.save
-        format.html { redirect_to @asset, notice: 'Asset was successfully created.' }
+        redirect_to @asset, notice: 'Asset was successfully created.' 
 
       else
-        format.html { render :new }
+        render :new 
        
       end
     end
@@ -42,9 +42,9 @@ class AssetsController < ApplicationController
   def update
     respond_to do |format|
       if @asset.update(asset_params)
-        format.html { redirect_to @asset, notice: 'Asset was successfully updated.' }
+        redirect_to @asset, notice: 'Asset was successfully updated.' 
               else
-        format.html { render :edit }
+        render :edit 
        
       end
     end
@@ -55,7 +55,7 @@ class AssetsController < ApplicationController
   def destroy
     @asset.destroy
     respond_to do |format|
-      format.html { redirect_to assets_url, notice: 'Asset was successfully destroyed.' }
+      redirect_to assets_url, notice: 'Asset was successfully destroyed.' 
      
     end
   end
