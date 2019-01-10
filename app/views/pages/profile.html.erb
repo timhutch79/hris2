@@ -18,10 +18,10 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                       <%= @employee.first_name %> <%= @employee.last_name %>
+                                       Name
                                     </h5>
                                     <h6>
-                                        <%= @employee.position_title %>
+                                        Position title
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -35,15 +35,14 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/><%= link_to 'Edit', edit_employee_path %>
-
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>WORK LINK</p>
-                            <a href=""><%= @employee.work_email %></a><br/>
+                            <a href="">emial link</a><br/>
                             <a href="">LinkedIn link</a><br/>
                             <a href="">Bootply Profile</a>
                             <p>SKILLS</p>
@@ -62,7 +61,7 @@
                                                 <label>User Id</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%= @employee.id %></p>
+                                                <p>Kshiti123</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -70,82 +69,33 @@
                                                 <label>Name</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%= @employee.first_name %> <%= @employee.last_name %></p>
+                                                <p>Kshiti Ghelani</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Gender</label>
+                                                <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%= @employee.gender %></p>
+                                                <p>kshitighelani@gmail.com</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Date of Birth</label>
+                                                <label>Phone</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%= @employee.date_of_birth %></p>
+                                                <p>123 456 7890</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Personal Email</label>
+                                                <label>Profession</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%= @employee.personal_email %></p>
+                                                <p>Web Developer and Designer</p>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Mobile</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.mobile %></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Position Title</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.position_title %></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Address</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.address1 %> <%= @employee.address2 %></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>City</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.city %></p>
-                                            </div>
-                                        </div>
-                                            <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Postcode</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.postcode %></p>
-                                            </div>
-                                        </div>
-                                          <div class="row">
-                                            <div class="col-md-6">
-                                                <label>State</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p><%= @employee.state %></p>
-                                            </div>
-                                        </div>
-
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row">
@@ -200,16 +150,3 @@
                 </div>
             </form>           
         </div>
-        <%= link_to 'Edit', edit_employee_path %> |
-
-    <%= link_to 'Back', employees_path %>
-  </div>
-</div>
-
-
-
-
-
-
-
-

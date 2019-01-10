@@ -1,21 +1,23 @@
 <div class="container">
 
-<h1>list view</h1>
+<h1>Employees</h1>
 
 
 
       <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-bordered">
           
-           <tr>      
+           <tr> 
+
       <th>ID</th>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Status</th>
+      <th>First Name</th>
+      <th>Last Name</th>
       <th>Date of Birth</th>
       <th>Gender</th>
       <th>Mobile</th>
       <th>Country</th>
-      <th>Deparment</th>
+      <th>Department</th>
       <th>Office</th>
     </tr>
   </thead>
@@ -23,16 +25,17 @@
   <tbody>
     <% @employees.each do |employee| %>
       <tr>
-        <td><%= link_to employee.id, employee  %></td>
+        <td><%= link_to employee.id, employee %></td>
+        <td><%= employee.status %></td>
         <td><%= employee.first_name %></td>
         <td><%= employee.last_name %></td>
         <td><%= employee.date_of_birth %></td>
-         <td><%= employee.gender %></td>
-           <td><%= employee.mobile %></td>
-            <td><%= employee.country %></td>
-             <td><%= employee.department %></td>
-              <td><%= employee.office %></td>
-      </tr>
+        <td><%= employee.gender %></td>
+        <td><%= employee.mobile %></td>
+        <td><%= employee.country %></td>
+        <td><%= employee.department %></td>
+        <td><%= employee.office %></t>
+              </tr>
     <% end %>
   </tbody>
 </table>
@@ -42,6 +45,8 @@
 </table>
 
 <br>
+
+ <centre><%= link_to 'New Employee', new_employee_path %></centre>
 
 
 
