@@ -1,0 +1,46 @@
+index
+<div class="container">
+
+<h1>Assets</h1>
+
+
+
+
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          
+           <tr> 
+
+      
+      <th>Asset Tag</th>
+      <th>Asset Type</th>
+      <th>Status</th>
+      <th>Allocated To</th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hardwares.each do |hardware| %>
+      <tr>
+        
+        <td><%= link_to hardware.asset_tag, hardware %></td>
+        <td><%= hardware.asset_type %></td>
+        <td><%= hardware.status %></td>
+        <td><%= hardware.employee_id %></td>
+        
+              </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</tr>
+</thead>
+</table>
+
+<br>
+
+ <centre><%= link_to 'New Asset', new_hardware_path %></centre>
+
+

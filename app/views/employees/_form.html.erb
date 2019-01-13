@@ -7,7 +7,7 @@
     <%= f.input :first_name %>
     <%= f.input :last_name, class: "control" %>
     <%= f.input :date_of_birth, class: "control" %>
-    <%= f.input :gender, class: "control" %>
+    <%= f.input :gender, collection: ["male", "female","perfer not to say"] %>
     <%= f.input :personal_email, class: "control" %>
     <%= f.input :work_email, class: "control" %>
     <%= f.input :mobile, class: "control" %>
@@ -16,11 +16,89 @@
     <%= f.input :position_title, class: "control" %>     
     <%= f.input :city, class: "control" %>
     <%= f.input :postcode, class: "control" %> 
-    <%= f.input :state, class: "control" %>
+    <%= f.input :state, collection: ["QLD", "NSW","ACT","VIC","SA","WA", "NA"] %>
+    <%= f.input :country, collection: ["Australia","New Zealand","Singapore","Hong Kong"] %>
     <%= f.input :start_date, class: "control" %> 
   </div>
   </div>
+
+
+
+<div class="container">
+<strong>Systems</strong>
+
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    JobAdder
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Bullhorn
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Astute Perm Payroll 
+  </label>
+</div>
+
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Nexus 
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    NetSuite
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Astute Payroll Officer 
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    FlexiPurchase
+  </label>
+</div>
+</div>
+
+<div class='container pull-right'>
+
+<strong>Hardware</strong>
+<div class="form-check pull-right">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Mobile Phone
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Desk Phone
+  </label>
+</div>
+</div>
+
+
+
 <%= f.button :submit, class: "botton is-primary" %> 
 
 <% end %>
 </div>
+

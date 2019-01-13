@@ -10,27 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_10_044817) do
-
-  create_table "assets", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "asset_tag"
-    t.string "asset_type"
-    t.string "model_brand"
-    t.string "serial_no"
-    t.date "manafacture_date"
-    t.string "host_name"
-    t.string "mac_address_ethernet"
-    t.string "mac_address_wifi"
-    t.string "operating_system"
-    t.string "business_unit"
-    t.string "location"
-    t.date "sophos_installed_date"
-    t.string "admin_password"
-    t.string "user_password"
-    t.string "setup_by"
-  end
+ActiveRecord::Schema.define(version: 2019_01_12_215755) do
 
   create_table "employees", force: :cascade do |t|
     t.string "status"
@@ -56,6 +36,28 @@ ActiveRecord::Schema.define(version: 2019_01_10_044817) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "employee_id"
+  end
+
+  create_table "hardwares", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "asset_tag"
+    t.string "asset_type"
+    t.string "model_brand"
+    t.string "serial_number"
+    t.string "host_name"
+    t.string "mac_address_wifi"
+    t.string "mac_address_ethernet"
+    t.string "operating_system"
+    t.string "business_unit"
+    t.string "location"
+    t.string "sophos_install_date"
+    t.string "admin_password"
+    t.string "user_password"
+    t.string "setup_by"
+    t.string "employee_id"
+    t.string "manufacture_date"
+    t.string "status"
   end
 
   create_table "pages", force: :cascade do |t|

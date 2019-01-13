@@ -1,0 +1,29 @@
+form
+
+<div class="container">
+<%= simple_form_for(@hardware) do |f| %>
+<div class="form-inputs">
+  </div>
+  <%= f.input :status, collection: ["Active", "Ready to Deploy", "Needs Repair", "End of Life",] %>
+<%= f.input :asset_tag %>
+<%= f.input :asset_type, collection: ["Montior", "Desktop","Laptop","Mobile Phone",]%>
+<%= f.input :model_brand %>
+<%= f.input :serial_number %>
+<%= f.input :manufacture_date %>
+<%= f.input :host_name %>
+<%= f.input :mac_address_ethernet %>
+<%= f.input :mac_address_wifi %>
+<%= f.input :operating_system %>
+<%= f.input :business_unit, collection: ["Rubicor Group", "Rubicor Workforce", "Rubicor Governemnt", "Rubicor Technical", "GR/N", "Xpand"] %>
+<%= f.input :location, collection: ["Mackay", "Queen Street", "Wacol", "Newcastle", "Parramatta", "Pitt St", "Canberra", "Collin Street", "Campbellfield", "Mt Waverly", "Adelaide", "Perth", "Singapore", "Hong Kong"] %>
+<%= f.input :sophos_install_date %>
+<%= f.input :admin_password %>
+<%= f.input :user_password %>
+<%= f.input :setup_by %>
+<%= f.input :employee_id %>
+
+<div class="form-actions">
+    <%= f.button :submit %>
+
+<% end %>
+</div>

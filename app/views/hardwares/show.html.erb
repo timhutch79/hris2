@@ -1,0 +1,128 @@
+show
+<div class="container">
+
+<div class="row"> 
+<div class="col-md-6">
+<label>Asset Id</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.id %></p>
+  </div>
+
+ <div class="col-md-6">
+<label>Asset Status</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.status %></p>
+  </div>
+
+
+<div class="col-md-6">
+<label>Asset Tag</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.asset_tag %></p>
+  </div>
+  
+  <div class="col-md-6">
+<label>Asset Type</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.asset_type %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Model/Brand</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.model_brand %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Serial Number</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.serial_number %></p>
+  </div>
+<div class="col-md-6">
+<label>Manufacture Date</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.manufacture_date %></p>
+  </div>
+  
+  <div class="col-md-6">
+<label>Host Name</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.host_name %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Mac Address Wifi</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.mac_address_wifi %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Mac Address Ethernet</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.mac_address_ethernet %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Operating System</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.operating_system %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Department</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.business_unit %></p>
+  </div>
+<div class="col-md-6">
+<label>Office</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.location %></p>
+  </div>
+  
+  <div class="col-md-6">
+<label>Sophos Install</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.sophos_install_date %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>Admin Password</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.admin_password %></p>
+  </div>
+
+  <div class="col-md-6">
+<label>User Password</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.user_password %></p>
+  </div>
+   <div class="col-md-6">
+<label>Setup By</label>
+</div>
+ <div class="col-md-6">
+  <p><%= @hardware.setup_by %></p>
+  </div>
+</div>
+ <%= link_to 'Edit', edit_hardware_path %> |
+
+    <%= link_to 'Back', hardwares_path %>
+  </div>
+</div>
+
+
